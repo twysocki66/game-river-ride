@@ -8,7 +8,7 @@ from event_dispatcher import EventDispatcher
 
 
 if __name__ == "__main__":
-    game = Game("Background animation", framerate=60)
+    game = Game("River ride DEMO", framerate=60)
 
     bg = Background(game.get_display())
     game.set_background(bg)
