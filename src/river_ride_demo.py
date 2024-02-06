@@ -7,7 +7,7 @@ from plane import Plane
 from event_dispatcher import EventDispatcher
 
 
-if __name__ == "__main__":
+def main():
     game = Game("River ride DEMO", framerate=60)
 
     bg = Background(game.get_display())
@@ -28,3 +28,7 @@ if __name__ == "__main__":
     game.set_event_dispatcher(dispatcher)
 
     game.loop()
+
+
+if __name__ == "__main__":
+    main()
