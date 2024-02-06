@@ -14,13 +14,9 @@ class Game:
         caption: str = "Pygame Demo",
         display_size: (int, int) = (800, 600),
         framerate: float = 60.0,
-        random_seed: bool = True,
     ) -> None:
         pygame.init()
         pygame.font.init()
-
-        if random_seed:
-            random.seed(100)
 
         self.__framerate = framerate
         self.__FPS = pygame.time.Clock()
@@ -47,6 +43,9 @@ class Game:
 
     def get_display(self):
         return self.__display
+
+    def set_random(self, initial: int = 1000) -> None:
+        random.seed(initial)
 
     def set_background(self, background: IBackground):
         self.__background = background

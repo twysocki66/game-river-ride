@@ -103,12 +103,12 @@ class Background(IBackground):
                 self.__window_rect,
             )
 
-    def speed_inc(self):
+    def speed_inc(self) -> None:
         if self.__speed_y > 0:
             self.__speed_y -= 1
             print(f"{self.__speed_y=}")
 
-    def speed_dec(self):
+    def speed_dec(self) -> None:
         if self.__speed_y < 3:
             self.__speed_y += 1
             print(f"{self.__speed_y=}")

@@ -9,6 +9,7 @@ from event_dispatcher import EventDispatcher
 
 def main():
     game = Game("River ride DEMO", framerate=60)
+    game.set_random()
 
     bg = Background(game.get_display())
     game.set_background(bg)
