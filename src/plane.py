@@ -36,7 +36,7 @@ class Plane(Sprite, IPlane):
         surface.blit(self.image, self.rect)
 
     def move_left(self) -> None:
-        self.rect.centerx -= 5
+        self.rect.centerx -= 3
 
     def move_right(self) -> None:
-        self.rect.centerx += 5
+        self.rect.centerx += 3
